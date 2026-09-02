@@ -1,0 +1,10 @@
+data/first_data-lnPTR-growth_rate-plot_57strains.csv
+data/OD_barcode_counts_3replicates.txt
+.venv/
+*.egg-info
+__pycache__/
+*.pkl
+*.png
+*.csv
+*.npz
+*.txt

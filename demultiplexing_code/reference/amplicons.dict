@@ -1,0 +1,23 @@
+@HD	VN:1.0	SO:unsorted
+@SQ	SN:ES55_ter	LN:105	M5:7d068190594acd905764a71a238031ae	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES55_ori	LN:105	M5:8e2bd61a3f46b5089eecd5805a3bc11f	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES60_ter	LN:105	M5:8155509600ab18bc8612c5a13cef7514	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES60_ori	LN:105	M5:d6c616dc9b4a22ead0a7aa1301cefda5	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES66_ter	LN:105	M5:76aa84ebba8706cac7466315f6e11ea1	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES66_ori	LN:105	M5:772743c28dc802820b40478039eed9ce	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES80_ter	LN:105	M5:598ea00633afbdcededc136a99856e55	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES80_ori	LN:105	M5:af7609d550be58696decd84d7c65c813	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES93_ter	LN:105	M5:d0927c4c36f77b1dea5d9a9bd1f1d112	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:ES93_ori	LN:105	M5:e76b0b99fef7ddd3d74b642b49b69738	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL13_ter	LN:105	M5:f384eb20058696ba264e5dc58d6ae42c	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL13_ori	LN:105	M5:c84bdb8b59b90940fb67aacdbd90b240	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL15_ter	LN:105	M5:8f1298c0f8ec2d1d0b95a775e867fe39	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL15_ori	LN:105	M5:13497b95b6a1a3b34a4d977320c4f586	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL17_ter	LN:105	M5:13b6ed9434928b3aa06ed5cc91ec5527	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL17_ori	LN:105	M5:fb1e771fb356a9c3d16d386035b10e72	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL1_ter	LN:105	M5:6519936781aad0cf820517d4aeebb9da	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL1_ori	LN:105	M5:f5e467457227046a024f538281f9f0a3	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL4_ter	LN:105	M5:bb4c57e613b6980aa006a6a366f3c184	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL4_ori	LN:105	M5:a953352197489d4c7cad2de2bd86113c	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL8_ter	LN:105	M5:2ba9724715729b42027d15f426efe7e7	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
+@SQ	SN:KL8_ori	LN:105	M5:26b2b9e2535423ab1a1e63c679d9ad2b	UR:file:///hpc/group/youlab/xc232/reads_06132026/reference/amplicons.fa
