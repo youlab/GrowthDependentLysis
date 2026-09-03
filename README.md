@@ -22,7 +22,12 @@ The study combines strain-resolved dual-barcoding measurements and synthetic mic
 
 The sequencing demultiplexing and barcode-processing workflow in `demultiplexing_code/` was developed in collaboration with **Jiesi Lei**.
 
-The dual-barcoding design workflow for the sink isolates was adapted from code developed by **Jaemin Kim**. Additional details and the corresponding reference will be added here once finalized.
+The dual-barcoding design workflow for the sink isolates was adapted from the
+[`xiaoli_PCR_design`](https://github.com/jaeminkim518/xiaoli_PCR_design)
+workflow developed by Jaemin Kim. The version used for the final sink-isolate
+primer design includes modifications to the ori-ter amplicon design workflow,
+including a fixed amplicon length of 105 bp, `seed_len = 4`, and
+`max_mismatches = 3`. 
 
 ## Requirements
 
