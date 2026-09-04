@@ -20,14 +20,16 @@ The study combines strain-resolved dual-barcoding measurements and synthetic mic
 
 ## Code contributions and acknowledgments
 
-The sequencing demultiplexing and barcode-processing workflow in `demultiplexing_code/` was developed in collaboration with **Jiesi Lei**.
+The sequencing demultiplexing and barcode-processing workflow for the Keio community was implemented in Galaxy and is available at `comm_Keio/Galaxy-Workflow-Chromosome_BarcodeProcessing_StrainBarcodes_Paired_End_w__counting_(counting_R1).ga`.
 
 The dual-barcoding design workflow for the sink isolates was adapted from the
 [`xiaoli_PCR_design`](https://github.com/jaeminkim518/xiaoli_PCR_design)
 workflow developed by Jaemin Kim. The version used for the final sink-isolate
 primer design includes modifications to the ori-ter amplicon design workflow,
 including a fixed amplicon length of 105 bp, `seed_len = 4`, and
-`max_mismatches = 3`. 
+`max_mismatches = 3`.
+
+The sequencing demultiplexing and barcode-processing workflow for the sink community was developed in collaboration with **Jiesi Lei** and is available in `demultiplexing_code/`.
 
 ## Requirements
 
