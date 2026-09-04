@@ -1,0 +1,588 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "comments": [],
+    "format-version": "0.1",
+    "name": "Chromosome_BarcodeProcessing_StrainBarcodes_Paired_End_w/_counting (counting R1) (imported from uploaded file)",
+    "report": {
+        "markdown": "\n# Workflow Execution Report\n\n## Workflow Inputs\n```galaxy\ninvocation_inputs()\n```\n\n## Workflow Outputs\n```galaxy\ninvocation_outputs()\n```\n\n## Workflow\n```galaxy\nworkflow_display()\n```\n"
+    },
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Read 1"
+                }
+            ],
+            "label": "Read 1",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 0,
+                "top": 365.693057937591
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "61f8d032-cc1f-46a6-b052-a42f9dd4cd5b",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Read 2"
+                }
+            ],
+            "label": "Read 2",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 18.5,
+                "top": 500.693057937591
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "1133c83c-6e27-4b58-9782-aaf83bf55fea",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "i5.txt"
+                }
+            ],
+            "label": "i5.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 610,
+                "top": 189.693057937591
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "310c6384-6437-45c8-aa8b-eaa275fb42e4",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "i7.txt"
+                }
+            ],
+            "label": "i7.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 1431,
+                "top": 183.693057937591
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "68ceba16-53f4-4ca6-96fc-fc3cc2af61ca",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "4": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Barcodes (Barcodes.txt)"
+                }
+            ],
+            "label": "Barcodes (Barcodes.txt)",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 2304.5878295898438,
+                "top": 0
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "3dff55d2-94bd-46f0-b83b-638ae3b9382c",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_trimmer/cshl_fastx_trimmer/1.0.2+galaxy0",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "input": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Grab i5-read",
+            "name": "Trim sequences",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 260,
+                "top": 235.693057937591
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_trimmer/cshl_fastx_trimmer/1.0.2+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "61b4cedc8934",
+                "name": "fastx_trimmer",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"first\": \"63\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"last\": \"70\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.0.2+galaxy0",
+            "type": "tool",
+            "uuid": "c014dc57-f430-439e-9e85-6a856fdad3f9",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "6": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1.1+galaxy0",
+            "errors": null,
+            "id": 6,
+            "input_connections": {
+                "input1_file": {
+                    "id": 5,
+                    "output_name": "output"
+                },
+                "input2_file": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "i5+R1",
+            "name": "FASTQ joiner",
+            "outputs": [
+                {
+                    "name": "output_file",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 538.486108943392,
+                "top": 337.1637204714739
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput_file": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output_file"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1.1+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "c885369b207b",
+                "name": "fastq_paired_end_joiner",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input1_file\": {\"__class__\": \"ConnectedValue\"}, \"input2_file\": {\"__class__\": \"ConnectedValue\"}, \"paste_sequence\": \"\", \"style\": \"old\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "2.0.1.1+galaxy0",
+            "type": "tool",
+            "uuid": "88bae6c1-58e8-401f-bf60-aa48869eb622",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "7": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_barcode_splitter/cshl_fastx_barcode_splitter/1.0.1",
+            "errors": null,
+            "id": 7,
+            "input_connections": {
+                "BARCODE": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "input": {
+                    "id": 6,
+                    "output_name": "output_file"
+                }
+            },
+            "inputs": [],
+            "label": "R1_demultiplexed_by_i5",
+            "name": "Barcode Splitter",
+            "outputs": [
+                {
+                    "name": "split_output",
+                    "type": "input"
+                },
+                {
+                    "name": "summary",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 926.2277487587988,
+                "top": 226.51219703805236
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionsummary": {
+                    "action_arguments": {
+                        "newtype": "tabular"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "summary"
+                },
+                "HideDatasetActionsplit_output": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "split_output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_barcode_splitter/cshl_fastx_barcode_splitter/1.0.1",
+            "tool_shed_repository": {
+                "changeset_revision": "4bedca26c133",
+                "name": "fastx_barcode_splitter",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"BARCODE\": {\"__class__\": \"ConnectedValue\"}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mismatches\": \"1\", \"partial\": \"0\", \"refBarcodeLocation\": {\"barcodeLocation\": \"bol\", \"__current_case__\": 0, \"EOL\": \"--bol\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.0.1",
+            "type": "tool",
+            "uuid": "59fc3e5c-75db-4297-9da0-237807983ad7",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Summary: Split R1 by i5",
+                    "output_name": "summary",
+                    "uuid": "64bd73c4-ca2f-45af-a308-9a340499d926"
+                }
+            ]
+        },
+        "8": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_trimmer/cshl_fastx_trimmer/1.0.2+galaxy0",
+            "errors": null,
+            "id": 8,
+            "input_connections": {
+                "input": {
+                    "id": 7,
+                    "output_name": "split_output"
+                }
+            },
+            "inputs": [],
+            "label": "Grab i7-read",
+            "name": "Trim sequences",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1180.328163356526,
+                "top": 405.37475354095767
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_trimmer/cshl_fastx_trimmer/1.0.2+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "61b4cedc8934",
+                "name": "fastx_trimmer",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"first\": \"71\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"last\": \"78\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.0.2+galaxy0",
+            "type": "tool",
+            "uuid": "b6f9296b-08ba-4c11-9430-e0b96ee7ce6f",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "9": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1.1+galaxy0",
+            "errors": null,
+            "id": 9,
+            "input_connections": {
+                "input1_file": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "input2_file": {
+                    "id": 7,
+                    "output_name": "split_output"
+                }
+            },
+            "inputs": [],
+            "label": "i7+i5+R1",
+            "name": "FASTQ joiner",
+            "outputs": [
+                {
+                    "name": "output_file",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 1437.2444974500943,
+                "top": 289.5634809793889
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_paired_end_joiner/fastq_paired_end_joiner/2.0.1.1+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "c885369b207b",
+                "name": "fastq_paired_end_joiner",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input1_file\": {\"__class__\": \"ConnectedValue\"}, \"input2_file\": {\"__class__\": \"ConnectedValue\"}, \"paste_sequence\": \"\", \"style\": \"old\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "2.0.1.1+galaxy0",
+            "type": "tool",
+            "uuid": "a5ded32e-d4bf-4a88-8d99-7c0b9bb88977",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "output_file",
+                    "output_name": "output_file",
+                    "uuid": "f018b244-99f2-455b-9c5a-ffea4bde0046"
+                }
+            ]
+        },
+        "10": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_barcode_splitter/cshl_fastx_barcode_splitter/1.0.1",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "BARCODE": {
+                    "id": 3,
+                    "output_name": "output"
+                },
+                "input": {
+                    "id": 9,
+                    "output_name": "output_file"
+                }
+            },
+            "inputs": [],
+            "label": "R1_demultiplexed_by_i7",
+            "name": "Barcode Splitter",
+            "outputs": [
+                {
+                    "name": "split_output",
+                    "type": "input"
+                },
+                {
+                    "name": "summary",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1714.3802663156268,
+                "top": 296.2187600652638
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionsummary": {
+                    "action_arguments": {
+                        "newtype": "tabular"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "summary"
+                },
+                "HideDatasetActionsplit_output": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "split_output"
+                },
+                "HideDatasetActionsummary": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "summary"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_barcode_splitter/cshl_fastx_barcode_splitter/1.0.1",
+            "tool_shed_repository": {
+                "changeset_revision": "4bedca26c133",
+                "name": "fastx_barcode_splitter",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"BARCODE\": {\"__class__\": \"ConnectedValue\"}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mismatches\": \"1\", \"partial\": \"0\", \"refBarcodeLocation\": {\"barcodeLocation\": \"bol\", \"__current_case__\": 0, \"EOL\": \"--bol\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.0.1",
+            "type": "tool",
+            "uuid": "a1e54b25-5506-4b3a-acd4-cbe3f1c64b72",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_trimmer/cshl_fastx_trimmer/1.0.2+galaxy0",
+            "errors": null,
+            "id": 11,
+            "input_connections": {
+                "input": {
+                    "id": 10,
+                    "output_name": "split_output"
+                }
+            },
+            "inputs": [],
+            "label": "R1_barcode",
+            "name": "Trim sequences",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 2007.9948415977713,
+                "top": 190.72834383093254
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_trimmer/cshl_fastx_trimmer/1.0.2+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "61b4cedc8934",
+                "name": "fastx_trimmer",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"first\": \"17\", \"input\": {\"__class__\": \"ConnectedValue\"}, \"last\": \"44\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.0.2+galaxy0",
+            "type": "tool",
+            "uuid": "cf97039b-c2ee-4b9d-be7b-bb51354555f7",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "output",
+                    "output_name": "output",
+                    "uuid": "52e8b820-def8-4046-a4b2-df6c9f128a0b"
+                }
+            ]
+        },
+        "12": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_barcode_splitter/cshl_fastx_barcode_splitter/1.0.1",
+            "errors": null,
+            "id": 12,
+            "input_connections": {
+                "BARCODE": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "input": {
+                    "id": 11,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": "Counted Barcodes",
+            "name": "Barcode Splitter",
+            "outputs": [
+                {
+                    "name": "split_output",
+                    "type": "input"
+                },
+                {
+                    "name": "summary",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 2588.8064880371094,
+                "top": 229.52494296875398
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionsummary": {
+                    "action_arguments": {
+                        "newtype": "tabular"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "summary"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastx_barcode_splitter/cshl_fastx_barcode_splitter/1.0.1",
+            "tool_shed_repository": {
+                "changeset_revision": "4bedca26c133",
+                "name": "fastx_barcode_splitter",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"BARCODE\": {\"__class__\": \"ConnectedValue\"}, \"input\": {\"__class__\": \"ConnectedValue\"}, \"mismatches\": \"2\", \"partial\": \"0\", \"refBarcodeLocation\": {\"barcodeLocation\": \"bol\", \"__current_case__\": 0, \"EOL\": \"--bol\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_uuid": null,
+            "tool_version": "1.0.1",
+            "type": "tool",
+            "uuid": "f6b2a883-4d2c-4044-9af5-ce5e986fc5f9",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Summary: split barcodes",
+                    "output_name": "summary",
+                    "uuid": "a5fc50d2-7c26-4c4f-9210-70fa5ad32c22"
+                },
+                {
+                    "label": "Final Barcodes",
+                    "output_name": "split_output",
+                    "uuid": "4f201e82-c69e-42e4-a020-4bb6d9bf18e8"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "82932dab-c53a-4845-95d5-3be997e1d932",
+    "version": 15
+}
