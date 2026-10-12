@@ -1,8 +1,19 @@
-# GrowthLysis
+# GrowthLysis: Bayesian Growth–Lysis Regression Pipeline
 
-Estimated runtime for a dataset (growth rates v.s. ln(PTR), ln(OD) v.s. time, and lysis rate v.s. growth rate): 4-5 Hours
+This repository contains a three-stage Bayesian analysis pipeline for estimating strain-specific effective growth rates, net population rates, and antibiotic-induced lysis rates in microbial communities.
 
-Bayesian regression pipeline for microbial growth data. Predicts growth rate from ln(PTR) across 57 bacterial strains using three stacked models.
+The pipeline integrates peak-to-trough ratio (PTR) measurements and time-resolved biomass data across 57 bacterial strains. It propagates uncertainty from the upstream growth-rate and biomass-trajectory models into the downstream growth–lysis regression.
+
+The pipeline consists of:
+
+1. **Model 1 — PTR-based growth-rate estimation:** Bayesian linear regression of effective growth rate against ln(PTR) for individual strains.
+2. **Model 2 — Biomass trajectory fitting:** Bayesian cubic polynomial regression of log-transformed biomass against time for each strain–replicate combination. Net population rates are obtained analytically from the fitted trajectories.
+3. **Model 4 — Stacked growth–lysis regression:** Combines posterior samples from Models 1 and 2 to infer lysis rates and estimate their relationship with effective growth rates.
+
+Model 4 in the code corresponds to Model 3 described in Supplementary Note 4 of the manuscript.
+
+**Expected runtime for the complete analysis:** Approximately 4–5 hours, depending on the hardware and MCMC settings.
+
 
 ## Setup
 
