@@ -2,7 +2,7 @@
 
 Code and processed data associated with the study:
 
-**Growth-dependent β-lactam killing preserves microbial community diversity**
+**Growth-dependent killing can preserve microbial diversity during antibiotic treatment**
 
 ## Overview
 
