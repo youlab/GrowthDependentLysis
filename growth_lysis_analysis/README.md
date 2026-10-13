@@ -202,3 +202,11 @@ python diagnostics/check_convergence.py --name refit
 ```
 
 Model 2 (cubic polynomial) is the most likely to show convergence issues because it fits 4 parameters to only 5 data points per strain-replicate, leaving the posterior poorly constrained for some combinations.
+
+### Bayesian growth–lysis analysis
+
+Example input datasets are provided in `growth_lysis_analysis/data/`, including PTR–growth-rate calibration measurements for 57 bacterial strains and time-resolved measurements from three biological replicates under one antibiotic treatment condition.
+
+Step-by-step execution instructions and expected outputs are described in `growth_lysis_analysis/demo/README.md`.
+
+The complete Bayesian pipeline requires approximately 4–5 hours using the default MCMC settings. These example datasets demonstrate the analysis workflow and do not represent the complete experimental dataset.
